@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NFCAMS</title>
+</head>
+<body>
+    <h2>NFC Attendance Taking Portal</h2>
+    <div id="status">
+        <h4>Hi There 👋 Welcome to NFCAMS</h4>
+        <button id="start-btn">Click Here to Start Taking Attendance</button>
+    </div>
+    <div>
+        <label for="teacher">Teacher Name:</label>
+        <select id="teacher" onchange="filterSubjects()">
+            <option value="">Select Teacher</option>
+            <option value="JINI">Jini George</option>
+            <option value="ANITHA">Anitha Jose</option>
+            <option value="NIMITHA">Nimitha Mary Mohan</option>
+        </select>
+    </div>
+    <div>
+        <label for="period">Period:</label>
+        <select id="period">
+            <option value="Period 1">Period 1</option>
+            <option value="Period 2">Period 2</option>
+            <option value="Period 3">Period 3</option>
+            <option value="Period 4">Period 4</option>
+            <option value="Period 5">Period 5</option>
+            <option value="Period 6">Period 6</option>
+        </select>
+    </div>
+    <div>
+        <label for="subject">Subject:</label>
+        <select id="subject">
+            <option value="">Select Teacher First</option>
+        </select>
+    </div>
+    <div id="record-info">
+        <h4>Record Information:</h4>
+        <p>Please tap an NFC tag to display record information here.</p>
+    </div>
+    <button id="start-class-btn" style="background-color: red;">Start Class</button>
+    <h3>(Click the Start Class button only after taking the Attendance of all students)</h3>
+   
+    <script src="./index.js"></script>
+</body>
+</html>
